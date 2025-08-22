@@ -26,6 +26,6 @@ def vital_low_threshold_check(vital_value, low_threshold, message):
   return True
 
 def vital_ok(temperature, pulseRate, spo2):
-  vital_range_check(temperature, 102, 95, 'Temperature critical!')
-  vital_range_check(pulseRate, 60, 102, 'Pulse Rate is out of range!')
+  vital_range_check(temperature, 95, 102, 'Temperature critical!')
+  vital_range_check(pulseRate, 60, 100, 'Pulse Rate is out of range!')
   vital_low_threshold_check(spo2, 90, 'Oxygen Saturation out of range!')
